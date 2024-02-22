@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        cardview:cardCornerRadius="2dp" >
+        cardview:cardCornerRadius="15dp" >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <ImageView
                 android:id="@+id/header_image"
                 android:layout_width="match_parent"
-                android:layout_height="84dp"
+                android:layout_height="110dp"
                 android:scaleType="centerCrop" />
 
             <TextView
