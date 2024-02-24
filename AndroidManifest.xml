@@ -55,16 +55,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-        <activity
-            android:name=".du_crot"
-            android:label="Dirty Unicorns"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
         <activity
             android:name=".darko_blur"
@@ -148,16 +138,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity>
         <activity
-            android:name=".derp_owlsome"
-            android:label="DerpFest - Owlsome Series"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".derp_avengers"
             android:label="DerpFest - Avengers"
             android:exported="true">
@@ -170,26 +150,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <activity
             android:name=".derp_kronic"
             android:label="DerpFest - Kronic"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".derp_fresh"
-            android:label="DerpFest - Fresh as fuck"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".derp_q"
-            android:label="DerpFest - OnePlus"
             android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
@@ -240,7 +200,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         
         <activity
             android:name=".GMLRv2"
-            android:label="GMLRv2 Collection" >
+            android:label="GMLRv2 Collection"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
