@@ -80,16 +80,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         
         <activity
-            android:name=".bootleg_style"
-            android:label="Bootleggers Styled Headers"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        
-        <activity
             android:name=".clo_aestheticwalls_mix"
             android:label="Memesis + Pizzheaderz Aesthetic - Vaporwave"
             android:exported="true">
@@ -118,30 +108,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".derp_art"
-            android:label="DerpFest - Art"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".derp_color"
-            android:label="DerpFest - Colors"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".derp_avengers"
-            android:label="DerpFest - Avengers"
+            android:label="Avengers"
             android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
@@ -151,7 +120,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".derp_kronic"
-            android:label="DerpFest - Kronic"
+            android:label="Kronic"
             android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
