@@ -40,16 +40,24 @@ open class BrowseHeaderActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         val pack = fixedPack()
+        // Settings passes the selected daylight pack so browsing opens on it.
+        val initialPackKey = intent?.getStringExtra(EXTRA_HEADER_PACK)
         setContent {
             OmniStyleTheme {
                 HeaderPickerScreen(
                     title = stringResource(titleRes),
                     pickerMode = pickerMode,
                     fixedPack = pack,
+                    initialPackKey = initialPackKey,
                     onBack = ::finish,
                 )
             }
         }
+    }
+
+    companion object {
+        /** Pack key: "package" or "package/activity", same format as Settings' pack values. */
+        const val EXTRA_HEADER_PACK = "header_pack"
     }
 }
 

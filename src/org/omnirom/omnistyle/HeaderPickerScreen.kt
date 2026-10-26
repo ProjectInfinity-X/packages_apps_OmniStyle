@@ -119,6 +119,8 @@ fun OmniStyleTheme(content: @Composable () -> Unit) {
  * @param pickerMode when true, tapping a header applies it (PickHeaderActivity);
  *                   when false the list is browse-only (BrowseHeaderActivity).
  * @param fixedPack  show only this pack and hide the pack selector.
+ * @param initialPackKey pack to open on (e.g. the daylight pack chosen in Settings);
+ *                   falls back to the pack holding the applied header, then the first one.
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -126,6 +128,7 @@ fun HeaderPickerScreen(
     title: String,
     pickerMode: Boolean,
     fixedPack: HeaderPack?,
+    initialPackKey: String? = null,
     onBack: () -> Unit,
 ) {
     val context = LocalContext.current
@@ -148,8 +151,8 @@ fun HeaderPickerScreen(
         applied = current
         packs = found
         if (selectedPackKey == null || found.none { it.key == selectedPackKey }) {
-            // Open on the pack that holds the applied header, else the first one.
-            selectedPackKey = (found.firstOrNull { it.packageName == current?.packageName }
+            selectedPackKey = (found.firstOrNull { it.key == initialPackKey }
+                ?: found.firstOrNull { it.packageName == current?.packageName }
                 ?: found.firstOrNull())?.key
         }
         if (found.isEmpty()) loading = false
