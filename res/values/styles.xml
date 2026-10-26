@@ -10,4 +10,14 @@
         <item name="android:windowLightNavigationBar">?attr/isLightTheme</item>
     </style>
 
+    <!-- Compose screens draw their own top app bar and handle insets. -->
+    <style name="Theme.OmniStyle.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:windowLightNavigationBar">?attr/isLightTheme</item>
+    </style>
+
 </resources>

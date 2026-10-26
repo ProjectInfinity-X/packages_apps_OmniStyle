@@ -17,34 +17,42 @@
 android_app {
     name: "OmniStyle",
 
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
+    resource_dirs: ["res"],
+    manifest: "AndroidManifest.xml",
+
     static_libs: [
+        // Wallpaper browser (View based)
         "androidx.appcompat_appcompat",
         "androidx.core_core",
         "androidx.cardview_cardview",
         "androidx.recyclerview_recyclerview",
         "androidx.gridlayout_gridlayout",
         "com.google.android.material_material",
-        "lib-picasso-target",
         "SettingsLib",
-    ],
-    resource_dirs: ["res"],
-    manifest: "AndroidManifest.xml",
-    srcs: ["src/**/*.java"],
-    privileged: true,
 
+        // Header picker (Compose)
+        "androidx.activity_activity-compose",
+        "androidx.compose.foundation_foundation",
+        "androidx.compose.material3_material3",
+        "androidx.compose.material_material-icons-core",
+        "androidx.compose.runtime_runtime",
+        "androidx.compose.ui_ui",
+        "androidx.core_core-ktx",
+        "kotlinx_coroutines_android",
+    ],
+
+    // No explicit Compose compiler plugin: Soong applies it automatically to any
+    // Kotlin module that depends on androidx.compose.runtime_runtime.
+
+    privileged: true,
     platform_apis: true,
+    system_ext_specific: true,
+
     optimize: {
         enabled: false,
     },
-
-    system_ext_specific: true,
-}
-
-// Enumerate target prebuilts to avoid linker warnings
-java_import {
-
-    name: "lib-picasso-target",
-    installable: false,
-    jars: ["libs/picasso-2.5.2.jar"],
-
 }
