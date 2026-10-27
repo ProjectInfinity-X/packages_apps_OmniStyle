@@ -18,24 +18,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <resources>
     <string name="browse_header">Headers</string>
     <string name="custom_header_image_notice">Header image set</string>
-    <string name="browse_walls">Wallpapers</string>
-    <string name="omni_walls">WaterSlides</string>
-    <string name="wallpaper_type_dialog_title">Set wallpaper</string>
-    <string name="wallpaper_type_both">Home screen and lock screen</string>
-    <string name="wallpaper_type_system">Home screen</string>
-    <string name="wallpaper_type_lock">Lock screen</string>
-    <string name="no_crop_activity_dialog_text">Omni Gallery app is required to set wallpaper</string>
-    <string name="no_crop_activity_dialog_title">Gallery missing</string>
-    <string name="scrolling_wall_dialog_text">Do you want to crop the wallpaper to the display size?</string>
-    <string name="scrolling_wall_dialog_title">Crop wallpaper</string>
-    <string name="scrolling_wall_yes">No</string>
-    <string name="scrolling_wall_no">Yes</string>
-    <string name="wallpaper_default_name">Wallpaper</string>
     <string name="browse_theme_header">Theme headers</string>
-    <string name="pick_header">Select headers</string>
-    <string name="sort_by_creator_menu">Sort by creator</string>
-    <string name="sort_by_tag_menu">Sort by tag</string>
-    <string name="sort_by_default_menu">Sort by name</string>
+    <string name="pick_header">Select header image</string>
 
     <!-- Header picker (Compose) -->
     <string name="navigate_up">Navigate up</string>
