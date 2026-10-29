@@ -67,9 +67,69 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity>
         <activity
-            android:name=".avengers"
+            android:name=".space_interval"
+            android:label="Space"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".darko_blur"
+            android:label="DarkobasBlur"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ig_fxckingmind"
+            android:label="Fxckingdeathwish's mind"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".clo_aestheticwalls_mix"
+            android:label="Memesis + Pizzheaderz Aesthetic - Vaporwave"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".clo_aestheticwalls_sj"
+            android:label="Memesis Aesthetic - Sacred Japan"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ig_agusfotos"
+            android:label="Agus.laz4rte Repertoire"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".derp_avengers"
             android:label="Avengers"
-            android:exported="false" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -77,19 +137,50 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity>
         <activity
-            android:name=".beaches"
-            android:label="Beaches"
-            android:exported="false" >
+            android:name=".derp_kronic"
+            android:label="Kronic"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".comic"
-            android:label="JLA, Xmen and Avengers"
-            android:exported="false" >
+            android:label="JayRod - JLA, Xmen and Avengers"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".naruto"
+            android:label="Naruto"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".sao_header"
+            android:label="Sword Art Online"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".GMLRv2"
+            android:label="GMLRv2 Collection"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -97,9 +188,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity>
         <activity
-            android:name=".scenes1"
-            android:label="Flat Scenery"
-            android:exported="false" >
+            android:name=".one_piece"
+            android:label="Onepiece"
+	    android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -107,83 +198,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity>
         <activity
-            android:name=".scenes2"
-            android:label="Flat Scenery 2"
-            android:exported="false" >
+            android:name=".kimetsu_no_yaiba"
+            android:label="Kimetsu no Yaiba"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".forest"
-            android:label="Forest"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".nature_random"
-            android:label="Nature (random)"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".nature"
-            android:label="Nature"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".poly"
-            android:label="Poly"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".space_interval"
-            android:label="Space (interval)"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".wavvy"
-            android:label="Wavvy"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".western"
-            android:label="Western"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".scenery"
-            android:label="Scenery - Anime"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="org.omnirom.DaylightHeaderPack1" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
